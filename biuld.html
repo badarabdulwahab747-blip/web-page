@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEB PAGE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="h-28 
+ bg-[radial-gradient(circle_at_20%_70%,rgb(6,122,231),transparent_50%),radial-gradient(circle_at_80%_30%,rgba(240,157,33),transparent_50%)]
+ border-b-[5px] border-r-[5px] border-l-[5px] border-t-[5px] border-blue-500 flex items-center justify-between px-6"> 
+    <div class="flex items-center gap-3">
+  <img src="./ChatGPT Image May 31, 2026, 04_08_07 PM.png"></div>
+       <h1 class="font-bold text-5xl pr-6">WEB PAGE <span class="text-blue-600">BUILDER</span></h1>
+    </div>
+    <div class="flex gap-3">
+      <button onclick="openExport()" class="mr-[50px] h-16 w-[70px] rounded-[50%]"><img src="https://simpleicons.org/icons/acode.svg" alt="" id="imges"></button>
+</div>
+</header>
+  <div class="flex h-[calc(100vh-64px)]">
+    <div class="w-72  bg-[radial-gradient(circle_at_80%_30%,rgb(6,122,231),transparent_50%),radial-gradient(circle_at_20%_70%,rgba(240,157,33),transparent_50%)]
+  border-l-[6px] border-b-[6px] border-blue-500 p-5 overflow-auto">
+ 
+      <h3 class="font-bold mb-4 text-2xl"><span class="text-blue-600">COMPONENTS</span></h3> 
+      <div class="grid grid-cols-1 gap-1 mt-2">
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="header">HEADER</div>
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="heading">HEADING</div>
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="paragraph">PARAGRAPH</div>
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="button">BUTTON</div>
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="box"> CARD</div>
+  <div class="element p-5 border-[2px] border-blue-500 text-white font-bold rounded-2xl cursor-grab" draggable="true" data-type="footer">FOOTER</div>
+</div></div>
+
+
+<div id="editorCanvas" ondrop="drop(event)" ondragover="allowDrop(event)" class="flex-1  p-5 overflow-auto">
+
+</div>
+   <div class="w-[290px]  bg-[radial-gradient(circle_at_80%_30%,rgba(240,157,33),transparent_50%),radial-gradient(circle_at_20%_70%,rgb(6,122,231),transparent_50%)] border-r-[6px] border-b-[6px] border-blue-500 p-5 overflow-auto">
+      <h3 class="font-bold mb-4 text-2xl"><span class="text-blue-600">PROPERTIES</span></h3>
+
+      <div class="space-y-5" id="propsPanel">
+        <p class="text-yellow-500 text-sm">Select an element to edit</p>
+        
+      </div>
+    </div>
+  <div id="exportModal" class="p-6">
+    <div id="img" class="bg-white rounded-2xl p-6 w-full w-[100%] h-[100vh] overflow-auto">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold text-blue-600">Export Code</h2>
+              
+      </div>
+      <div class="space-y-4">
+        <div>
+          <div class="flex justify-between mb-2">
+            <label class="font-semibold text-blue-600">index.html</label>
+          </div>
+          <p class="code-box" id="htmlCode"></p>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <label class="font-semibol6-d text-blue-600">style.css</label>
+          </div>
+   <button onclick="closeExportModal()" 
+                class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl transition">
+          ✕ Back to Builder
+        </button></div>
+      </div>
+    </div>
+  </div>
+  <script src="./server.js"></script>
+  
+</body>
+</html>

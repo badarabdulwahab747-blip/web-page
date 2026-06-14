@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Page Builder</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(0, 85, 255, 0.75),
+        rgba(255, 120, 0, 0.75)
+    ),
+    url("https://badarabdulwahab747-blip.github.io/b/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+.container{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:20px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+button{
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#0099ff,#ff8800);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    margin-left: 160PX;
+}
+button a{
+ text-decoration: none;
+ color: white;
+}
+button:hover{
+    transform:scale(1.05);
+}
+span{
+    color: gold;
+}
+video{
+    height: 200px;
+    width: 450px;
+    border-radius: 50.5;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <video id="myVideo" autoplay muted loop>
+    <source src="./vid.mp4" type="video/mp4">
+</video>
+
+<h1>Web Page Builder</h1>
+    <p>Create Beautiful Websites <span>Without Coding</span></p>
+
+    <button><a href="./biuld.html">
+        Start Building
+        </a>
+    </button>
+</div>
+</body>
+</html>

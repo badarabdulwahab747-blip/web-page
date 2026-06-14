@@ -1,0 +1,243 @@
+:root {
+  --primary:blue;
+  --bg:black;
+  --text: black;
+}
+
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background-image: url(https://badarabdulwahab747-blip.github.io/b/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+}
+#imges{
+  height: 50px;
+  width: 100px;
+filter: brightness(0) saturate(100%) invert(40%) sepia(88%) saturate(5803%) hue-rotate(218deg) brightness(97%) contrast(90%);}    input[type="range"] {
+        accent-color:rgb(59, 130, 246);   /* ← Sirf is line se blue red ho jayega */
+    }
+    #imges:hover{
+filter: brightness(0) saturate(100%) invert(0%) sepia(90%) saturate(7460%) hue-rotate(347deg) brightness(105%) contrast(111%);}
+    #navlinkeditor{
+      background-color: black;
+      margin-bottom: 50px;
+    }
+header {
+  background: var(--card);
+  border-bottom: 2px solid var(--border);
+}
+header img{
+  border-radius: 60px;
+  height: 101px;
+  width:200px;
+}
+
+/* BILKUL SADA BUILD AREA - KOI OUTLINE NAHI */
+ #editorCanvas {
+  
+  flex: 1;
+  min-height: 100vh;
+  margin: 0;
+  margin: 0;
+  height: 100vh;
+  border-top: orange solid 5px;
+  border-left: orange solid 5px;
+  border-right: orange solid 5px;
+  border-bottom: blue solid 5px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  color: white; 
+  background-image: url(https://badarabdulwahab747-blip.github.io/aaaaaaaaaa/real.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.builder-element,.inline-element {
+  position: relative;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  width: auto;
+  border: 1px dashed transparent; /* Dashed but transparent */
+  border-radius: 12px;
+  padding: 24px;
+  background: var(--card);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 120px;
+}
+
+
+/* Hover pe sirf light glow - outline nahi */
+.builder-element:hover,.inline-element:hover {
+  border-color: rgba(37,99,235,0.2);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.1), 0 4px 20px rgba(37,99,235,0.08);
+  transform: translateY(-2px);
+}
+
+/* Selected pe bhi outline nahi - sirf subtle shadow */
+.selected {
+  border-color: var(--primary)!important;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15), 0 8px 30px rgba(37,99,235,0.12)!important;
+  outline: none!important;
+}
+
+.delete-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgb(0,0,225);
+}
+
+.selected .delete-btn {
+  display: block;
+  animation: popIn 0.2s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}/* Export Modal CSS - Fixed */
+#exportModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-image: url(https://wallpapers.com/images/hd/orange-and-blue-j3fug7is7nwa7487.jpg);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(
+    180deg,
+    #3b82f6,
+    #1d4ed8
+  );
+}
+}
+#exportModal.show {
+  display: flex;
+}
+#img{
+  background-image: url(https://wallpapers.com/images/hd/orange-and-blue-j3fug7is7nwa7487.jpg);
+}
+.modal-content {
+  background: #1a1a2e;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.code-box{   
+  padding: 15px;
+  color:white;
+  border-radius: 20px;
+  font-family:monospace;
+  font-size:20px;
+  height:auto;
+  width:100%;
+  overflow:auto;
+  font-weight: 700;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+/* Button ko hamesha sahi dikhane ke liye */
+.inline-element[data-type="button"] {
+  padding: 0!important;
+  border: none!important;
+  background: transparent!important;
+  outline: none!important;
+}
+
+.inline-element[data-type="button"] .btn-link {
+  background:blue;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+#impotent{
+filter: brightness(0) saturate(100%) invert(40%) sepia(88%) saturate(5803%) hue-rotate(218deg) brightness(97%) contrast(90%);}
+#impotent:hover{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(90%) saturate(7460%) hue-rotate(347deg) brightness(105%) contrast(111%);}
+
+.inline-element[data-type="button"] .btn-link:hover {
+  background: blue;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px blue;
+}
+
+/* Selected hone pe bhi button ka design na toote */
+.inline-element[data-type="button"].selected {
+  outline: none!important;
+  box-shadow: 0 0 0 2px blue !important;
+  border-radius: 50px;
+}
+
+/* Delete button ke upar na aaye */
+.inline-element[data-type="button"] .delete-btn {
+  top: -12px;
+  right: -12px;
+}/* Button ka pura area clickable */
+.inline-element[data-type="button"] {
+  padding: 0!important;
+  border: 2px dashed transparent;
+  background: transparent!important;
+  outline: none!important;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 120px;
+  min-height: 50px;
+}
+
+/* Hover pe pura area highlight ho */
+.inline-element[data-type="button"]:hover {
+  border-color:blue;
+  border-radius: 50px;
+}
+
+/* Selected pe pura area blue glow */
+.inline-element[data-type="button"].selected {
+  border-color: var(--primary)!important;
+  box-shadow: 0 0 0 3px blue!important;
+  border-radius: 50px;
+  outline: none!important;
+}
+
+/* Button ke andar text center rahe */
+.btn-link {
+  pointer-events: none; /* Text click na ho, wrapper click ho */
+  user-select: none;
+}
+
